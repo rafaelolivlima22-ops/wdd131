@@ -25,6 +25,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-top: 50px;
+    
 
 
 }
@@ -38,21 +39,27 @@ h1 {
 
 }
 
+li{
+    margin-bottom: 10px;
+}
+
 .flag-box img {
-    float: none;
+    float: right;
     width: 80px;
-    
+
 }
 
 .flag-box {
-    float: left;
+    float: none;
     margin: 0 15px 0 0;
-    
+    padding: 10px;
+
 
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 10px;
 }
 
 h2 {
@@ -96,7 +103,7 @@ main>h1 {
 
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     background-color: rgb(64, 62, 62);
     padding: 10px;
 }
@@ -122,9 +129,9 @@ main {
 
 
 header,
-main,
+
 footer {
-    max-width: 900px;
+    max-width: 2000px;
     margin: 0 auto;
     padding: 20px;
 
