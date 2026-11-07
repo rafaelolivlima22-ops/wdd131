@@ -1,0 +1,31 @@
+/* Larger view (min-width: 640px) */
+
+/* Hide hamburger, always show the nav in a row */
+#menu {
+    display: none;
+}
+
+nav,
+nav.open {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+}
+
+nav a {
+    border-top: none;
+    padding: 0.5rem 1rem;
+}
+
+header {
+    flex-wrap: nowrap;
+}
+
+/* Three columns in the gallery */
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+h1 {
+    font-size: 1.75rem;
+}
