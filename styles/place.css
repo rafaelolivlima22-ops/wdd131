@@ -1,3 +1,8 @@
+:root {
+    --accent-color: #f8fb36;
+    --border-color: #333;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -23,10 +28,10 @@ header h1 {
     width: 100%;
     margin: 1.5rem 0;
     padding: 10px 20px;
-    border: 2px solid black;
+    border: 2px solid var(--border-color);
     font-size: clamp(2rem, 8vw, 4.5rem);
     transform: translateX(1px);
-    background-color: #f8fb36;
+    background-color: var(--accent-color);
     
     
 }
@@ -50,7 +55,7 @@ header h1 {
 
 .info-grid section {
     padding: 1rem;
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
     border-radius: 8px;
 }
 
@@ -59,9 +64,10 @@ header h1 {
 }
 
 .weather-icon {
-    margin-bottom: 0.5rem;
-    text-align: center;
-    font-size: 1.5rem;
+    display: block;
+    width: 3rem;
+    height: 3rem;
+    margin: 0 auto 0.5rem;
 }
 
 .info-grid section p {
@@ -72,13 +78,17 @@ header h1 {
     margin: 0.5rem auto;
 }
 
+.info-grid section p span:first-child::after {
+    content: ":";
+}
+
 footer {
     margin-bottom: 1rem;
     padding: 1rem;
-    border: 1px solid #333;
+    border: 1px solid var(--border-color);
     text-align: center;
     font-size: 0.875rem;
-    background-color: #f8fb36;
+    background-color: var(--accent-color);
 }
 
 @media (max-width: 600px) {
