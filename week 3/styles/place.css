@@ -31,6 +31,10 @@ header h1 {
     
 }
 
+.hero-picture {
+    display: block;
+}
+
 .hero-image {
     display: block;
     width: 100%;
