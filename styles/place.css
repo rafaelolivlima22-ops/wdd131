@@ -70,6 +70,10 @@ header h1 {
     margin: 0 auto 0.5rem;
 }
 
+.weather-emoji {
+    display: none;
+}
+
 .info-grid section p {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -94,5 +98,18 @@ footer {
 @media (max-width: 600px) {
     .info-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 601px) {
+    .weather-icon {
+        display: none;
+    }
+
+    .weather-emoji {
+        display: block;
+        margin-bottom: 0.5rem;
+        text-align: center;
+        font-size: 1.5rem;
     }
 }

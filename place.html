@@ -26,7 +26,7 @@
 
     <main>
     <picture class="hero-picture">
-        <source media="(min-width: 601px)" srcset="week%203/images/brazil-waterfall.webp">
+        <source media="(min-width: 601px)" srcset="week%203/images/brazil-waterfall%20%281%29.webp">
         <img src="week%203/images/braziliguacucity.webp" alt="A beautiful view of Iguazu Falls in Brazil" class="hero-image">
     </picture>
 
@@ -47,11 +47,12 @@
     <section>
          <h2>Weather</h2>
         <img src="week%203/images/weather.svg" alt="" class="weather-icon">
+        <span class="weather-emoji" aria-hidden="true">⛅</span>
 
-        <p><span>Temperature</span><span>20°C</span></p>
+        <p><span>Temperature</span><span id="temperature" data-celsius="20">20°C</span></p>
         <p><span>Conditions</span><span>Mostly Cloudy</span></p>
-        <p><span>Wind</span><span>Up to 29 km/h</span></p>
-        <p><span>Wind Chill</span><span></span></p>
+        <p><span>Wind</span><span id="wind-speed" data-kph="29">Up to 29 km/h</span></p>
+        <p><span>Wind Chill</span><span id="wind-chill">N/A</span></p>
     </section>
 </div>
     
